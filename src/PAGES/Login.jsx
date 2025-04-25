@@ -12,8 +12,6 @@ export default function Login() {
   const { user, setUser } = useContext(Context)
   const navigate = useNavigate()
 
-  
-
 
 
   const loginUser = (event) => {

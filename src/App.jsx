@@ -9,7 +9,7 @@ import Course from './PAGES/Course';
 import Layout from './Layout';
 import Shop from './PAGES/Shop';
 import ProductDetail from './PAGES/ProductDetail';
-import Maincontext from './PAGES/MainContext';
+import MainContext from './PAGES/MainContext';
 import Cart from './PAGES/Cart';
 import Login from './PAGES/Login';
 import Register from './PAGES/Register';
@@ -65,12 +65,12 @@ export default function App() {
   );
   return (
     <>
-      <Maincontext>
+      <MainContext>
         <div className="text-center text-2xl shadow underline">
           {/* <h1>Asad Khan's Website</h1> */}
         </div>
         <RouterProvider router={routes} />
-      </Maincontext>
+      </MainContext>
 
 
     </>
