@@ -3,20 +3,20 @@ export const Context = createContext();
 import { ToastContainer, toast } from 'react-toastify';
 export default function MainContext({ children }) {
     // const [cart, setCart] = useState([]);
-    const oldCartData = JSON.parse(localStorage.getItem(`CART`)) ?? [];
-    const userToken = (localStorage.getItem)(`token`) ?? '';
+    const oldCartData = JSON.parse(localStorage.getItem(CART)) ?? [];
+    const userToken = (localStorage.getItem)(token) ?? '';
     const [cart, setCart] = useState(oldCartData)
     const [user, setUser] = useState(userToken);
 
     // console.log(oldCartData);
     useEffect(
         () => {
-            localStorage.setItem(`CART`, JSON.stringify(cart));
+            localStorage.setItem(CART, JSON.stringify(cart));
         }, [cart]
     )
     useEffect(
         () => {
-            localStorage.setItem(`token`, user)
+            localStorage.setItem(token, user)
         }, [user]
     )
 
