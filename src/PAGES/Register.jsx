@@ -19,16 +19,19 @@ export default function Register() {
       .then((userCredential) => {
         // Signed up 
         const user = userCredential.user;
+        console.log(user);
+        return
+
         console.log("userregister");
         toast.success("User creatted successfully")
         // ...
       })
-     .catch((error) => {
-  console.error("❌ Registration failed:");
-  console.error("Error Code:", error.code);
-  console.error("Error Message:", error.message);
-  toast.error("User not creatted ")
-});
+      .catch((error) => {
+        console.error("❌ Registration failed:");
+        console.error("Error Code:", error.code);
+        console.error("Error Message:", error.message);
+        toast.error("User not creatted ")
+      });
 
 
 
@@ -38,38 +41,38 @@ export default function Register() {
   }
 
 
-      const loginWithGoogle = () => {
-        const provider = new GoogleAuthProvider();
-  
-  
-        const auth = getAuth(app);
-        signInWithPopup(auth, provider)
-          .then((result) => {
-            // This gives you a Google Access Token. You can use it to access the Google API.
-            const credential = GoogleAuthProvider.credentialFromResult(result);
-            const token = credential.accessToken;
-            // The signed-in user info.
-            const user = result.user;
-            // IdP data available using getAdditionalUserInfo(result)
-                    // ...
-                    setUser(user.accessToken)
-                    navigate("/")
-                    toast.success("Successfully Login")
-  
-  
-  
-          }).catch((error) => {
-            // Handle Errors here.
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            // The email of the user's account used.
-            const email = error.customData.email;
-            // The AuthCredential type that was used.
-            const credential = GoogleAuthProvider.credentialFromError(error);
-            // ...
-          });
-  
-        }
+  const loginWithGoogle = () => {
+    const provider = new GoogleAuthProvider();
+
+
+    const auth = getAuth(app);
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        // This gives you a Google Access Token. You can use it to access the Google API.
+        const credential = GoogleAuthProvider.credentialFromResult(result);
+        const token = credential.accessToken;
+        // The signed-in user info.
+        const user = result.user;
+        // IdP data available using getAdditionalUserInfo(result)
+        // ...
+        setUser(user.accessToken)
+        navigate("/")
+        toast.success("Successfully Login")
+
+
+
+      }).catch((error) => {
+        // Handle Errors here.
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // The email of the user's account used.
+        const email = error.customData.email;
+        // The AuthCredential type that was used.
+        const credential = GoogleAuthProvider.credentialFromError(error);
+        // ...
+      });
+
+  }
   return (
     <>
       <meta charSet="UTF-8" />
@@ -114,8 +117,8 @@ export default function Register() {
               Register
             </button>
             <div className="flex justify-center">
-              <button 
-              onClick={loginWithGoogle}
+              <button
+                onClick={loginWithGoogle}
                 type="button"
                 className="bg-white text-black font-semibold py-3 px-3 rounded-2xl flex items-center justify-center gap-4 transform hover:scale-105 transition duration-300"
               >

@@ -23,25 +23,6 @@ export default function Cart() {
     )
 
 
-    // Calculate Subtotal, Tax, Shipping, and Total dynamically
-    // const subtotal = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
-    // const tax = subtotal * 0.05; // Assuming a 5% tax rate
-    // const shipping = 5.00; // Static shipping cost
-    // const total = subtotal + tax + shipping;
-
-    // // Remove an item from the cart
-    // const removeItem = (index) => {
-    //     const updatedCart = cart.filter((_, i) => i !== index);
-    //     setCart(updatedCart);
-    // };
-
-    // // Update item quantity
-    // const updateQuantity = (index, quantity) => {
-    //     const updatedCart = [...cart];
-    //     updatedCart[index].quantity = quantity; 
-    //     setCart(updatedCart);
-    // };
-
     return (
         <>
             <meta charSet="UTF-8" />

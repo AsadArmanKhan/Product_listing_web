@@ -116,13 +116,13 @@ function ProductCard({ product, setCart, cart }) {
         />
         <div className="space-y-1 mt-2">
           <h2 className="text-xl font-semibold text-gray-800 animate-fade-in">{product.title}</h2>
-          <p className="text-lg font-bold text-green-600 animate-fade-in">${product.price}</p>
+          {/* <p className="text-lg font-bold text-green-600 animate-fade-in">${product.price}</p>
           <p className="text-sm text-gray-500 animate-fade-in">
             Discount: <span className="font-medium text-gray-700">{product.discountPercentage}%</span>
-          </p>
-          <p className="text-sm text-yellow-500 animate-fade-in">
+          </p> */}
+          {/* <p className="text-sm text-yellow-500 animate-fade-in">
             Rating: <span className="font-medium text-yellow-500">{product.rating}</span>/5
-          </p>
+          </p> */}
           <p className="text-sm text-gray-500 animate-fade-in">
             Category: <span className="text-gray-700">{product.category}</span>
           </p>
