@@ -2,17 +2,17 @@ import React from 'react'
 // import Header from './Common/Header'
 // import Footer from './Common/Footer'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Home from './PAGES/Home';
-import Contact from './PAGES/Contact';
-import About from './PAGES/About';
-import Course from './PAGES/Course';
+import Home from './Pages/Home';
+import Contact from './Pages/Contact';
+import About from './Pages/About';
+import Course from './Pages/Course';
 import Layout from './Layout';
-import Shop from './PAGES/Shop';
-import ProductDetail from './PAGES/ProductDetail';
-import MainContext from './PAGES/MainContext';
-import Cart from './PAGES/Cart';
-import Login from './PAGES/Login';
-import Register from './PAGES/Register';
+import Shop from './Pages/Shop';
+import ProductDetail from './Pages/ProductDetail';
+import MainContext from './Pages/MainContext';
+import Cart from './Pages/Cart';
+import Login from './Pages/Login';
+import Register from './Pages/Register';
 
 export default function App() {
 

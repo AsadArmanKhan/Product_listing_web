@@ -20,8 +20,6 @@ export default function Register() {
         // Signed up 
         const user = userCredential.user;
         console.log(user);
-        return
-
         console.log("userregister");
         toast.success("User creatted successfully")
         // ...

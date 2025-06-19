@@ -1,9 +1,9 @@
 import axios from 'axios';
 import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { Context } from './MainContext';
 import confetti from 'canvas-confetti';
 import { ToastContainer, toast } from 'react-toastify';
+import { Context } from './MainContext';
 
 
 export default function ProductDetail() {
@@ -115,7 +115,7 @@ export default function ProductDetail() {
                             {currentProduct.images && currentProduct.images.map((imageData, index) => {
                                 return (
                                     <img
-                                    onClick={()=>setSelectImage(imageData)}
+                                        onClick={() => setSelectImage(imageData)}
                                         src={imageData}
                                         alt="Thumb 1"
                                         className="w-24 h-24 object-cover rounded-lg cursor-pointer border-2 border-gray-200 hover:border-blue-500 zoom"
