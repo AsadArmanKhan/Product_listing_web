@@ -3,7 +3,7 @@ import React from 'react'
 import { useState } from 'react';
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom';
-import Shop from '../PAGES/Shop';
+import Shop from '../Pages/Shop';
 
 export default function Filter({ slug, setRating, rating, price, setPrice }) {
   const [allCategories, setAllCategories] = useState([]);

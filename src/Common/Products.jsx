@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useContext, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
-import { Context } from '../PAGES/MainContext';
+import { Context } from '../Pages/MainContext';
 import confetti from 'canvas-confetti';
 import { ToastContainer, toast } from 'react-toastify';
 
