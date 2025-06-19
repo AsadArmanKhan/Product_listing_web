@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../Common/Header'
 import Footer from '../Common/Footer'
 
-export default function Home() {
+function Home() {
   return (
     <>
       {/* <Header /> */}
@@ -50,3 +50,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home;

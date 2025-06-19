@@ -14,7 +14,7 @@ import Cart from './Pages/Cart';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
 
-export default function App() {
+function App() {
 
   const routes = createBrowserRouter(
     [
@@ -77,6 +77,7 @@ export default function App() {
   )
 }
 
+export default App;
 // <Header />
 // <h1 className='text-7xl text-center	'>WELCOME TO HOME PAGE</h1>
 // <Footer />

@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 // import { Context } from '../PAGES/MainContext';
 import { FaShoppingCart } from 'react-icons/fa'; // ← Importing shopping cart icon
-import { Context } from '../PAGES/MainContext';
+import { Context } from '../Pages/MainContext';
 
 export default function Header() {
   // const { cart, setCart, user, setUser } = useContext(Context);
