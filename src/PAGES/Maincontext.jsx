@@ -1,7 +1,7 @@
 import React, { createContext, useEffect, useState } from 'react'
 export const Context = createContext();
 import { ToastContainer, toast } from 'react-toastify';
-export default function MainContext({ children }) {
+function MainContext({ children }) {
     // const [cart, setCart] = useState([]);
     const oldCartData = JSON.parse(localStorage.getItem('CART')) ?? [];
     const userToken = localStorage.getItem('token') ?? '';
@@ -30,3 +30,5 @@ export default function MainContext({ children }) {
 
     )
 }
+
+export default MainContext;

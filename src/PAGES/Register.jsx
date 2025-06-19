@@ -19,8 +19,8 @@ export default function Register() {
       .then((userCredential) => {
         // Signed up 
         const user = userCredential.user;
-        console.log(user);
-        console.log("userregister");
+        // console.log(user);
+        // console.log("userregister");
         toast.success("User creatted successfully")
         // ...
       })
